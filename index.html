@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdonaiSounds | Divine Music Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'adonai-gold': '#FFD700',
+                        'adonai-purple': '#9D4EDD',
+                        'divine-blue': '#00F5FF',
+                        'spirit-pink': '#FF2E63'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#0A0B1A]">
+    <!-- Navigation with mobile menu -->
+    <nav class="container mx-auto px-4 sm:px-6 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo and brand - always visible -->
+            <div class="flex items-center space-x-3">
+                <!-- Logo remains same -->
+                <div class="relative w-8 h-8">
+                    <!-- Base circle -->
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-r from-adonai-gold to-adonai-purple"></div>
+                    <!-- Sound wave effect -->
+                    <div class="absolute inset-0 rounded-full border-2 border-white/30 scale-[1.2] animate-pulse"></div>
+                    <div
+                        class="absolute inset-0 rounded-full border-2 border-white/20 scale-[1.4] animate-pulse delay-150">
+                    </div>
+                    <!-- Center dot -->
+                    <div class="absolute inset-[30%] rounded-full bg-white"></div>
+                </div>
+                <span class="text-white text-xl sm:text-2xl font-bold tracking-wide">Adonai<span
+                        class="text-adonai-gold">Sounds</span></span>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-white p-2" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-12">
+                <a href="#" class="text-white/90 hover:text-adonai-gold text-sm font-medium">Discover</a>
+                <a href="#" class="text-white/90 hover:text-adonai-gold text-sm font-medium">Worship</a>
+                <a href="#" class="text-white/90 hover:text-adonai-gold text-sm font-medium">Premium</a>
+            </div>
+
+            <!-- Desktop Buttons -->
+            <div class="hidden md:flex items-center space-x-6">
+                <button class="text-white/90 hover:text-adonai-gold text-sm font-medium">Sign In</button>
+                <button
+                    class="bg-gradient-to-r from-adonai-gold to-adonai-purple text-white text-sm px-5 py-2 rounded-full hover:opacity-90 transition-all">
+                    Start Free
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#"
+                    class="block px-3 py-2 text-white/90 hover:text-adonai-gold text-base font-medium">Discover</a>
+                <a href="#"
+                    class="block px-3 py-2 text-white/90 hover:text-adonai-gold text-base font-medium">Worship</a>
+                <a href="#"
+                    class="block px-3 py-2 text-white/90 hover:text-adonai-gold text-base font-medium">Premium</a>
+                <button
+                    class="w-full text-left px-3 py-2 text-white/90 hover:text-adonai-gold text-base font-medium">Sign
+                    In</button>
+                <button
+                    class="w-full mt-2 bg-gradient-to-r from-adonai-gold to-adonai-purple text-white px-5 py-2 rounded-full hover:opacity-90 transition-all">
+                    Start Free
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 sm:px-6 py-6 sm:py-12">
+        <!-- Main container -->
+        <div class="rounded-[32px] overflow-hidden relative">
+            <!-- Animated gradient background -->
+            <div class="absolute inset-0">
+                <!-- Dynamic gradient orbs -->
+                <div
+                    class="absolute top-0 left-0 w-[600px] h-[600px] bg-adonai-purple/30 rounded-full blur-[120px] animate-pulse">
+                </div>
+                <div
+                    class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-divine-blue/20 rounded-full blur-[100px] animate-pulse delay-700">
+                </div>
+                <div
+                    class="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-spirit-pink/20 rounded-full blur-[80px] animate-pulse delay-1000">
+                </div>
+
+                <!-- Noise overlay -->
+                <div class="absolute inset-0 opacity-30 mix-blend-overlay bg-[url('noise.png')]"></div>
+
+                <!-- Glass effect overlay -->
+                <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-black/20 backdrop-blur-sm"></div>
+            </div>
+
+            <!-- Content Container -->
+            <div class="relative">
+                <!-- Hero Section -->
+                <div class="relative min-h-[400px] sm:h-[400px] overflow-hidden px-4 sm:px-0">
+                    <!-- Hero Text -->
+                    <div class="relative z-10 pt-12 sm:absolute sm:top-16 sm:left-16 max-w-xl">
+                        <h1
+                            class="text-white text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-none mb-6">
+                            Divine Music.<br />
+                            Pure Worship.<br />
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-adonai-gold to-divine-blue">Your
+                                Spirit.</span>
+                        </h1>
+                        <p class="text-white/70 text-lg sm:text-xl mb-8">Experience music in a whole new dimension with
+                            AI-powered recommendations and spatial audio.</p>
+                        <button
+                            class="w-full sm:w-auto bg-adonai-purple text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold hover:bg-opacity-90 transition-all inline-flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                            Start Listening
+                        </button>
+                    </div>
+
+                    <!-- Right side content with enhanced PC layout -->
+                    <div
+                        class="mt-12 sm:mt-0 sm:absolute sm:right-0 sm:top-12 lg:top-16 h-[300px] sm:h-full w-full sm:w-1/2 flex items-center justify-end">
+                        <!-- Featured Artist Image - With enhanced styling -->
+                        <div
+                            class="relative w-full sm:w-[300px] lg:w-[400px] xl:w-[500px] h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] sm:mr-24">
+                            <img src="img/portrait-smiley-couple-with-headphones.png" alt=""
+                                class="absolute inset-0 w-full h-full object-cover object-center rounded-2xl">
+
+                            <!-- Sophisticated gradient overlays -->
+                            <div class="absolute inset-0 rounded-2xl">
+                                <!-- Base gradient -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                                </div>
+                                <!-- Side gradient -->
+                                <div class="absolute inset-0 bg-gradient-to-r from-adonai-purple/30 to-transparent">
+                                </div>
+                                <!-- Subtle glow effect -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-adonai-gold/10 via-transparent to-divine-blue/20">
+                                </div>
+                            </div>
+
+                            <!-- Enhanced decorative elements for PC -->
+                            <div
+                                class="absolute -left-4 -top-4 w-24 h-24 lg:w-32 lg:h-32 rounded-full border-2 border-adonai-gold/30 animate-pulse">
+                            </div>
+                            <div
+                                class="absolute -right-4 -bottom-4 w-32 h-32 lg:w-40 lg:h-40 rounded-full border-2 border-divine-blue/30 animate-pulse delay-300">
+                            </div>
+
+                            <!-- Additional decorative elements for PC -->
+                            <div
+                                class="hidden lg:block absolute -left-8 -bottom-8 w-24 h-24 rounded-full border border-spirit-pink/20 animate-pulse delay-500">
+                            </div>
+                            <div
+                                class="hidden lg:block absolute -right-8 -top-8 w-20 h-20 rounded-full border border-divine-blue/20 animate-pulse delay-700">
+                            </div>
+
+                            <!-- Hover effect for PC -->
+                            <div
+                                class="absolute inset-0 rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gradient-to-t from-adonai-purple/30 via-transparent to-transparent">
+                            </div>
+                        </div>
+
+                        <!-- Music visualizer - Enhanced for PC -->
+                        <div class="hidden sm:flex absolute right-16 lg:right-24 space-x-2">
+                            <div
+                                class="w-2 lg:w-3 h-16 lg:h-24 bg-gradient-to-t from-adonai-gold to-adonai-purple rounded-full animate-bounce">
+                            </div>
+                            <div
+                                class="w-2 lg:w-3 h-24 lg:h-32 bg-gradient-to-t from-divine-blue to-adonai-purple rounded-full animate-bounce delay-100">
+                            </div>
+                            <div
+                                class="w-2 lg:w-3 h-32 lg:h-40 bg-gradient-to-t from-spirit-pink to-divine-blue rounded-full animate-bounce delay-200">
+                            </div>
+                            <div
+                                class="w-2 lg:w-3 h-20 lg:h-28 bg-gradient-to-t from-adonai-purple to-divine-blue rounded-full animate-bounce delay-300">
+                            </div>
+                            <div
+                                class="w-2 lg:w-3 h-28 lg:h-36 bg-gradient-to-t from-divine-blue to-adonai-gold rounded-full animate-bounce delay-400">
+                            </div>
+                        </div>
+
+                        <!-- Additional ambient elements for PC -->
+                        <div class="hidden lg:block absolute top-1/4 right-12 w-16 h-16">
+                            <div class="absolute inset-0 rounded-full bg-adonai-gold/10 animate-ping"></div>
+                            <div class="absolute inset-[25%] rounded-full bg-adonai-gold/20"></div>
+                        </div>
+                        <div class="hidden lg:block absolute bottom-1/4 right-16 w-12 h-12">
+                            <div class="absolute inset-0 rounded-full bg-divine-blue/10 animate-ping delay-700"></div>
+                            <div class="absolute inset-[25%] rounded-full bg-divine-blue/20"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="px-4 sm:px-16 pb-8 sm:pb-16 mt-32 sm:mt-35">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-16">
+                        <!-- Feature cards with responsive padding -->
+                        <div class="space-y-6 sm:space-y-8 backdrop-blur-xl bg-white/5 p-6 sm:p-8 rounded-3xl">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-adonai-purple to-divine-blue flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-2xl font-bold">Discover Daily</h3>
+                                <p class="text-white/70 mt-4 text-sm leading-relaxed">
+                                    AI-curated playlists that match your unique taste and mood.
+                                </p>
+                            </div>
+                            <button
+                                class="group flex items-center space-x-2 text-white/90 hover:text-adonai-purple transition-colors">
+                                <span class="font-medium">Explore Music</span>
+                                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Spatial Audio Card -->
+                        <div class="space-y-6 sm:space-y-8 backdrop-blur-xl bg-white/5 p-6 sm:p-8 rounded-3xl">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-spirit-pink to-adonai-purple flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414m2.828-9.9a9 9 0 012.728-2.728" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-2xl font-bold">Spatial Audio</h3>
+                                <p class="text-white/70 mt-4 text-sm leading-relaxed">
+                                    Immersive 360° sound experience with dynamic head tracking.
+                                </p>
+                            </div>
+                            <button
+                                class="bg-white/10 text-white px-6 py-3 rounded-full hover:bg-white/20 transition-colors">
+                                Learn More
+                            </button>
+                        </div>
+
+                        <!-- Premium Features Card -->
+                        <div class="space-y-6 sm:space-y-8 backdrop-blur-xl bg-white/5 p-6 sm:p-8 rounded-3xl">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-adonai-purple to-divine-blue">
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-divine-blue to-spirit-pink">
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-spirit-pink to-adonai-purple">
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-2xl font-bold">Premium Features</h3>
+                                <p class="text-white/70 mt-4 text-sm leading-relaxed">
+                                    Unlock exclusive features and enjoy ad-free music streaming.
+                                </p>
+                            </div>
+                            <button
+                                class="bg-gradient-to-r from-adonai-purple to-divine-blue text-white px-6 py-3 rounded-full hover:opacity-90 transition-opacity">
+                                Go Premium
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Playlists Section -->
+    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-24">
+        <div class="rounded-[32px] overflow-hidden relative backdrop-blur-xl bg-white/5 p-8 sm:p-12">
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Featured Playlists</h2>
+                    <p class="text-white/70 max-w-xl">Discover curated worship experiences that elevate your spirit</p>
+                </div>
+                <button
+                    class="mt-4 sm:mt-0 group flex items-center space-x-2 text-white/90 hover:text-adonai-gold transition-colors">
+                    <span class="font-medium">View All</span>
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Playlist Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Playlist Card 1 - Morning Worship -->
+                <div class="group relative">
+                    <div class="relative aspect-square rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=500&h=500&fit=crop"
+                            alt="Morning Worship"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                        <button
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div
+                                class="w-12 h-12 rounded-full bg-adonai-gold flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-white font-bold">Morning Worship</h3>
+                        <p class="text-white/70 text-sm mt-1">Start your day with praise</p>
+                    </div>
+                </div>
+
+                <!-- Playlist Card 2 - Spirit & Truth -->
+                <div class="group relative">
+                    <div class="relative aspect-square rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1508695666381-69deeaa78ccb?w=500&h=500&fit=crop"
+                            alt="Spirit & Truth"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                        <button
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div
+                                class="w-12 h-12 rounded-full bg-adonai-gold flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-white font-bold">Spirit & Truth</h3>
+                        <p class="text-white/70 text-sm mt-1">Deep worship experience</p>
+                    </div>
+                </div>
+
+                <!-- Playlist Card 3 - Peaceful Presence -->
+                <div class="group relative">
+                    <div class="relative aspect-square rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519795612147-2db8847a051f?w=500&h=500&fit=crop"
+                            alt="Peaceful Presence"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                        <button
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div
+                                class="w-12 h-12 rounded-full bg-adonai-gold flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-white font-bold">Peaceful Presence</h3>
+                        <p class="text-white/70 text-sm mt-1">Meditative worship</p>
+                    </div>
+                </div>
+
+                <!-- Playlist Card 4 - Victory Songs -->
+                <div class="group relative">
+                    <div class="relative aspect-square rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?w=500&h=500&fit=crop"
+                            alt="Victory Songs"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                        <button
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div
+                                class="w-12 h-12 rounded-full bg-adonai-gold flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-white font-bold">Victory Songs</h3>
+                        <p class="text-white/70 text-sm mt-1">Uplifting praise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose AdonaiSounds Section -->
+    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-24">
+        <div class="rounded-[32px] overflow-hidden relative backdrop-blur-xl bg-white/5 p-8 sm:p-12">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Why Choose AdonaiSounds</h2>
+                <p class="text-white/70 max-w-2xl mx-auto">Experience worship music like never before with our unique
+                    features designed to enhance your spiritual journey</p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
+                <!-- AI-Powered Recommendations -->
+                <div
+                    class="group p-6 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/15 hover:to-white/10 transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-r from-adonai-gold to-divine-blue flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-4">AI-Powered Recommendations</h3>
+                    <p class="text-white/70 leading-relaxed">Discover new worship songs tailored to your spiritual
+                        journey with our intelligent recommendation system.</p>
+                </div>
+
+                <!-- High-Quality Audio -->
+                <div
+                    class="group p-6 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/15 hover:to-white/10 transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-r from-spirit-pink to-adonai-purple flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414m2.828-9.9a9 9 0 012.728-2.728" />
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-4">High-Quality Audio</h3>
+                    <p class="text-white/70 leading-relaxed">Experience crystal-clear sound with our HD audio streaming
+                        and advanced audio processing technology.</p>
+                </div>
+
+                <!-- Curated Playlists -->
+                <div
+                    class="group p-6 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/15 hover:to-white/10 transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-r from-divine-blue to-adonai-gold flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-4">Curated Playlists</h3>
+                    <p class="text-white/70 leading-relaxed">Explore handpicked collections of worship music for every
+                        moment of your spiritual journey.</p>
+                </div>
+
+                <!-- Offline Mode -->
+                <div
+                    class="group p-6 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/15 hover:to-white/10 transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-r from-adonai-purple to-spirit-pink flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-4">Offline Mode</h3>
+                    <p class="text-white/70 leading-relaxed">Download your favorite worship songs and playlists to
+                        listen even when you're offline.</p>
+                </div>
+
+                <!-- Multi-Device Sync -->
+                <div
+                    class="group p-6 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/15 hover:to-white/10 transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-r from-divine-blue to-spirit-pink flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-4">Multi-Device Sync</h3>
+                    <p class="text-white/70 leading-relaxed">Seamlessly switch between devices while keeping your
+                        playlists and preferences in sync.</p>
+                </div>
+
+                <!-- Community Features -->
+                <div
+                    class="group p-6 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 hover:from-white/15 hover:to-white/10 transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-r from-adonai-gold to-adonai-purple flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-white text-xl font-bold mb-4">Community Features</h3>
+                    <p class="text-white/70 leading-relaxed">Connect with fellow worshippers, share playlists, and grow
+                        together in faith.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Plans Section -->
+    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-24">
+        <div class="rounded-[32px] overflow-hidden relative backdrop-blur-xl bg-white/5 p-8 sm:p-12">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Choose Your Plan</h2>
+                <p class="text-white/70 max-w-2xl mx-auto">Select the perfect plan for your worship journey</p>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Free Plan -->
+                <div class="relative group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-divine-blue/20 to-adonai-purple/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all">
+                    </div>
+                    <div class="relative p-8 rounded-3xl bg-white/10 backdrop-blur-xl">
+                        <h3 class="text-white text-xl font-bold mb-4">Free</h3>
+                        <div class="flex items-baseline mb-8">
+                            <span class="text-4xl font-bold text-white">$0</span>
+                            <span class="text-white/70 ml-2">/month</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Basic audio quality
+                            </li>
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Ad-supported listening
+                            </li>
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Basic playlists
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full py-3 px-6 rounded-full bg-white/10 text-white font-medium hover:bg-white/20 transition-colors">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="relative group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-adonai-gold/30 to-divine-blue/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all">
+                    </div>
+                    <div class="relative p-8 rounded-3xl bg-white/10 backdrop-blur-xl border border-adonai-gold/30">
+                        <div
+                            class="absolute -top-4 right-4 bg-gradient-to-r from-adonai-gold to-divine-blue px-4 py-1 rounded-full">
+                            <span class="text-sm font-medium text-black">Popular</span>
+                        </div>
+                        <h3 class="text-white text-xl font-bold mb-4">Premium</h3>
+                        <div class="flex items-baseline mb-8">
+                            <span class="text-4xl font-bold text-white">$9.99</span>
+                            <span class="text-white/70 ml-2">/month</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                HD audio quality
+                            </li>
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Ad-free experience
+                            </li>
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Unlimited playlists
+                            </li>
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Offline listening
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full py-3 px-6 rounded-full bg-gradient-to-r from-adonai-gold to-divine-blue text-black font-medium hover:opacity-90 transition-opacity">
+                            Get Premium
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Family Plan -->
+                <div class="relative group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-spirit-pink/20 to-adonai-purple/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all">
+                    </div>
+                    <div class="relative p-8 rounded-3xl bg-white/10 backdrop-blur-xl">
+                        <h3 class="text-white text-xl font-bold mb-4">Family</h3>
+                        <div class="flex items-baseline mb-8">
+                            <span class="text-4xl font-bold text-white">$14.99</span>
+                            <span class="text-white/70 ml-2">/month</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Up to 6 accounts
+                            </li>
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                All Premium features
+                            </li>
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Family mix playlists
+                            </li>
+                            <li class="flex items-center text-white/70">
+                                <svg class="w-5 h-5 mr-3 text-adonai-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                </svg>
+                                Parental controls
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full py-3 px-6 rounded-full bg-white/10 text-white font-medium hover:bg-white/20 transition-colors">
+                            Get Family Plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Simple Footer Section -->
+    <footer class="relative bg-black/40 backdrop-blur-xl mt-24">
+        <div class="container mx-auto px-4 py-8">
+            <!-- Main Footer Content -->
+            <div class="flex flex-col items-center text-center">
+                <!-- Logo and Brand -->
+                <div class="mb-6">
+                    <div class="flex items-center justify-center space-x-2">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-gradient-to-r from-adonai-gold to-divine-blue flex items-center justify-center">
+                            <span class="text-black font-bold text-xl">A</span>
+                        </div>
+                        <span class="text-white text-xl font-bold">AdonaiSounds</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex flex-wrap justify-center gap-6 mb-6">
+                    <a href="#" class="text-white/70 hover:text-white transition-colors">Home</a>
+                    <a href="#" class="text-white/70 hover:text-white transition-colors">About</a>
+                    <a href="#" class="text-white/70 hover:text-white transition-colors">Features</a>
+                    <a href="#" class="text-white/70 hover:text-white transition-colors">Pricing</a>
+                    <a href="#" class="text-white/70 hover:text-white transition-colors">Contact</a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="#" class="text-white/70 hover:text-adonai-gold transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-adonai-gold transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-adonai-gold transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126-2.126-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.17.249 2.148.477 2.227.419.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.899-.421-.166 1.065-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Copyright -->
+                <p class="text-white/50 text-sm">&copy; 2024 AdonaiSounds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
